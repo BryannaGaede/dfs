@@ -89,6 +89,7 @@ printd(["\n\n"])
 
 #helper function - check adjacent squares
 def ck_adj(row,col):
+    printd(["checking ", row, col, "\n"])
     row_adjust = [0,-1,0,1]
     col_adjust = [-1,0,+1,0]
     for i in range(4):
@@ -101,8 +102,9 @@ def ck_adj(row,col):
 
 #add to adjacent squares acordingly when not walls and keep going until queue is empty
 while len(q) > 0:
-    ck_adj(q[len(q)-1][0],q[len(q)-1][1])
+    x, y = q[len(q)-1][0],q[len(q)-1][1]
     q.remove(q[len(q)-1])
+    ck_adj(x,y)
 
 #debugging
 printd(["\nAFTER TRAVERSAL:", "\n\n"])
