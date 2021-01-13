@@ -101,8 +101,8 @@ def ck_adj(row,col):
 
 #add to adjacent squares acordingly when not walls and keep going until queue is empty
 while len(q) > 0:
-    ck_adj(q[0][0],q[0][1])
-    q.remove(q[0])
+    ck_adj(q[len(q)-1][0],q[len(q)-1][1])
+    q.remove(q[len(q)-1])
 
 #debugging
 printd(["\nAFTER TRAVERSAL:", "\n\n"])

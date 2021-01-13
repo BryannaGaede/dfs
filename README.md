@@ -1,4 +1,4 @@
-# Deapth First Search in Python
+# Depth First Search in Python
 ## Labrynth Solver
 <br>
 
@@ -22,5 +22,5 @@ O O O O O <br>
 
 ### Solution:
 
-The solution to this problem is written in Python and used deapth first search. <br>
+The solution to this problem is written in Python and used depth first search. <br>
 2-3 command line arguments are used, input file, output file and optional 1 for debugging messages to print. The holes are added to a stack, each adjacent square is checked for validity and if the value is adjusted that point is added to the stack to be checked again. Multiple inputs were used to check if code caught unusual cases. 
